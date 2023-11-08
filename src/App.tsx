@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+ import { Routes, Route } from 'react-router-dom';
 
 import SigninForm  from './_auth/forms/SigninForm';
 import SignupForm from './_auth/forms/SignupForm';
