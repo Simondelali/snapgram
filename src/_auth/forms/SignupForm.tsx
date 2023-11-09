@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -37,6 +36,12 @@ const SignupForm = () => {
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof SignupValidation>) {
     // const newUser = await createUserAccount(values) 
+    values = {
+      name: '',
+      username: '',
+      email: '',
+      password: '',
+    }
   }
   return (
     <Form {...form}>
