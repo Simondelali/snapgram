@@ -9,7 +9,6 @@ export async function createUserAccount(user: INewUser) {
             user.email,
             user.password,
             user.name,
-
         )
 
         return newAccount;
